@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Approver</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://kit.fontawesome.com/968b7ca54c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- <div class="d-flex flex-column position-fixed"> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid ">
+            <div class="navbar-collapse d-flex align-items-center" id="navbarSupportedContent">
+                <div class="navbar-brand ">
+                    <h2>Tenacious</h2>
+                </div>
+                <button style="display: inline-block;position:absolute;right:5rem; padding:5px 8px;" class="nav navbar-nav"><i class="fa-solid fa-power-off"></i>&nbsp; Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <nav id="sidebar">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                  <span class="sr-only">Toggle Menu</span>
+                </button>
+        </div>
+        <div class="p-4 pt-5">
+            <a href="#" class="img logo rounded-circle mb-6"><img src="./images/Adminlogo.png" alt="Admin Logo" style="margin-left:0.8rem;width:11rem;height:10rem"></a>
+            <h4 style="margin-left: 1.5rem;" class="text-light admin-text mt-5">Hello Approver!</h4>
+            <ul class="list-unstyled components mb-5 sidebar-items">
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"> <i class="fa-solid fa-house ml-4 mr-4"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-trophy ml-4 mr-4"></i>My Awards</a>
+                </li>
+                <li>
+                    <a href="#"><i style="margin-right:1.8rem;" class="fa-solid bi bi-person-plus  ml-4 "></i>Approval</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-user ml-4 mr-4"></i>Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid bi bi-person-plus ml-4 mr-4"></i>Request</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- </div> -->
+
+     <div class="container d-flex justify-content-center table-box">
+
+
+    <!-- Write your contents here -->
+
+    <div class="container">
+        <div class="row d-flex justify-content-center  ">
+          <div class="col-md-12 col-xl-4">
+           <h2 class="ml-5">Awardee Details</h2>
+            <div class="card " style="border-radius: 15px; width: 200rem; margin-bottom: 10px;">
+              <div class="card-body">
+                <div class="mt-3 mb-4 text-center">
+                <image src="https://wallpapercave.com/dwp1x/wp6649916.jpg" style=width:10rem; 
+                    class="rounded-circle img-fluid" style="width: 100px;" />
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="mb-0">ACEID</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <p class="text-muted mb-0">INT0664</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="mb-0">Name</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <p class="text-muted mb-0">Anu</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="mb-0">Designation</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <p class="text-muted mb-0">SE</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-4">
+                      <p class="mb-0">Department</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <p class="text-muted mb-0">.net</p>
+                    </div>
+                  </div>
+                  <hr>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="mb-0">Requester</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <p class="text-muted mb-0">Anitha</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="mb-0">Award</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <p class="text-muted mb-0">Rolestar</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="mb-0">Reason</p>
+                  </div>
+                  <div class="col-sm-8">
+                    <p class="text-muted mb-0">For consistent performance</p>
+                  </div>
+                </div>
+                <br>
+                <div class="button-group text-center mt-3" >
+                    <button type="button" class="btn btn-success pull-left  " data-toggle="modal" data-target="#myModal">Accept</button>
+                    <!-- Modal -->
+                   <div class="modal fade" id="myModal" role="dialog">
+                   <div class="modal-dialog">
+
+                   <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    
+                      <h4 class="modal-title">Success!</h4>
+                    </div>
+                  <div class="modal-body">
+                  <p>You have approved the request and forwarded to HR partners.</p>
+                 </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                 </div>
+  
+                </div>
+                 </div>
+                    <span class="ml-5"></span>
+                    <button class="btn btn-danger" data-target="#loginmodal" data-toggle="modal">Reject</button>
+                       <div class="container">
+                          <div class="row">
+                                <div class="col col-sm-12">
+                                     <div class="modal" data-keyboard="false" data-backdrop="static" id="loginmodal" tabindex="-1">
+                                         <div class="modal-dialog">
+                                             <div class="modal-content">
+                                                <div class="modal-header">
+                                                   <h4 class="modal-title">Rejection Reason</h4>
+                                                       <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <form>
+                                                     <div class="form-group">
+                                                             <input type="text" class="form-control" placeholder="Enter Reason" id="inputUserName" />
+                                                     </div>
+
+                                                 </form>
+                                                </div>
+                                            <div class="modal-footer">
+                                                    <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                                    <button class="btn btn-success" data-dismiss="modal">Submit</button>
+                                              </div>
+
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                  </div>
+    
+                            </div>
+                              </div>
+                            </div>
+    
+                              </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+    <!-- End of content -->
+
+     </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+</body>
+
+</html>
