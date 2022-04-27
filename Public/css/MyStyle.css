@@ -1,0 +1,59 @@
+.card {
+    border-color: #866ec7;
+    max-width:450px;
+    margin-top: 50px;
+}
+.profile{
+  width: 150px;
+  height:150px;
+}
+.profile-card-3 .profile {
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+.profile-thumb-block{
+  display: inline-block;
+  margin: 15px 50px 15px 20px;
+  
+}
+.profile1-card-3 .profile{
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  margin-top:70px;
+}
+
+.profile-thumb-block1 {
+  display: inline-block;
+  margin: 15px 50px 15px 20px;
+}
+
+.FooterImage{
+  text-align:center;
+}
+.content {
+  padding-top: 150px;   
+}
+.greetingcomment {
+  margin: 20px 20px 20px 20px;
+  
+}
+.card-footer{
+  border-color: #866ec7;
+}
+.allcomments {
+  width: 399px;
+  height: 350px;
+  overflow-y: scroll;
+}
+.content{
+padding-top: 130px;
+}
+
+.dropdown,.Datefilters,.filter-button,.form-select{
+margin-left: 10px;
+}
+.Datefilters{
+margin-top: 18px;
+}
