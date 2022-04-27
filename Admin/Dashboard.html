@@ -73,14 +73,21 @@
         window.onload = function () {
           var chart = new CanvasJS.Chart("chartContainer",
           {
+            animationEnabled: true,
+            animationDuration:2000,
+            exportEnabled: true,
+            backgroundColor: "#E5E5E5",
+            theme: "light2", 
             title:{
             text: "Award Given in last 6 months Organisation wise"
             },
               data: [
             {
               type: "stackedColumn",
-              legendText: "Development",
+              legendText: "Dotnet",
+              indexLabel: "{y}",
 			showInLegend: "true",
+            indexLabelPlacement: "inside",
               dataPoints: [
               {  y: 48, label: "December"},
               {  y: 111 , label: "January"},
@@ -95,11 +102,11 @@
               type: "stackedColumn",
               legendText: "Testing",
 			showInLegend: "true",
-            indexLabel: "#total",
+            indexLabel: "{y}",
 			yValueFormatString: "#",
-			indexLabelPlacement: "outside",
+			indexLabelPlacement: "inside",
                dataPoints: [
-              {  y: 250, label: "December"},
+              {  y: 250 ,label: "December"},
               {  y: 135 , label: "January"},
               {  y: 107, label: "February" },
               {  y: 52, label: "March" },
