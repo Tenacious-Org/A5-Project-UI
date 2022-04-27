@@ -1,0 +1,67 @@
+.search{
+    float: right;
+}
+
+.add{
+    margin-left:23rem;
+  }
+
+  #UserName
+  {
+      width:450px;
+  }
+  #username
+  {
+    width:400px;
+    border: 1ps solid #888888;
+  }
+  #Award
+  {
+      width:450px;
+  }
+  #awardType
+  {
+    width:400px;
+  }
+  #awardReason
+  {
+    width:800px;
+    height:400px;
+  }
+  #reason
+  {
+      margin-bottom:10px;
+  }
+  #addRequest
+  {
+    border: 1px solid #BFBFBF;
+    padding: 10px;
+    width:60rem;
+    margin-top:10rem;
+    margin-left:15rem;
+  }
+  #submit{
+      margin-left:20rem;
+  }
+  #submit:hover{
+      background-color:#248639;
+  }
+  #cancel
+  {
+      margin-left:5rem;
+  }
+  .nameAward
+  {
+    display:inline-block;
+    margin-bottom:40px;
+  }
+  .profileImage
+  {
+      display:inline-block;
+      margin-top:40px;
+  }
+  .profileName
+  {
+      margin-top: 5px;
+      margin-left:37px;
+  }
