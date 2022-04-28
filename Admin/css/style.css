@@ -572,7 +572,13 @@ pre code {
     overflow-y: scroll;
 }
 
-
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 @media (min-width: 576px) {
     .container {
@@ -11161,7 +11167,6 @@ a[data-toggle="collapse"] {
     border-radius: 4px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: transparent;
 }
 
 .form-control:focus,
@@ -11193,6 +11198,7 @@ a[data-toggle="collapse"] {
     position: fixed;
     min-height: 100%;
     top: 10%;
+    z-index: 3;
 }
 
 .navbar {
@@ -11247,28 +11253,22 @@ button {
 }
 
 .sidebar-items>li:hover {
-    background-color: gainsboro;
+    background-color: blueviolet;
     border-radius: 15px;
-    color: lightgrey;
+    color: black;
 }
 
 
 /* Changes */
 
-
-
-
 @media (max-width: 576px) {
-   
     #sidebar {
         top: 80px;
-        z-index: 100;
     }
 }
+
 @media (min-width: 1900px) {
-   
     #sidebar {
         top: 110px;
-        z-index: 100;
     }
 }

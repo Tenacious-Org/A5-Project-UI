@@ -2,24 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>Tenacious</title>
+    <title>Awards List</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="https://kit.fontawesome.com/968b7ca54c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/List.css">
-
-
+    <link rel="stylesheet" href="css/Admin.css">
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
     <!-- <div class="d-flex flex-column position-fixed"> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
             <div class="navbar-collapse d-flex align-items-center" id="navbarSupportedContent">
                 <div class="navbar-brand ">
                     <h2>Tenacious</h2>
@@ -37,62 +36,65 @@
                   <span class="sr-only">Toggle Menu</span>
                 </button>
         </div>
+
         <div class="p-4 pt-5">
             <a href="#" class="img logo rounded-circle mb-6"><img src="./images/Adminlogo.png" alt="Admin Logo" style="margin-left:0.8rem;width:11rem;height:10rem"></a>
-            <h4 style="margin-left: 1.5rem;" class="text-light admin-text mt-5">Hello Admin!</h4>
-            <ul class="list-unstyled components mb-5 sidebar-items">
+            <h4 style="margin-left: 0rem;" class="text-light mt-4 text-center">Hello Admin!</h4>
+            <ul class="list-unstyled components mt-4 mb-5 sidebar-items">
                 <li>
-                    <a href="Dashboard.html" data-toggle="collapse" aria-expanded="false"> <i class="fa-solid fa-house ml-4 mr-4"></i>Home</a>
-                </li>
-                <li>
-                    <a href="Employee List.html"><i style="margin-right:2rem;" class="fa-solid fa-person ml-4 "></i>Employee</a>
+                    <a href="Dashboard.html" > <i class="fa-solid fa-house ml-4 mr-4"></i>Home</a>
                 </li>
                 <li>
                     <a href="Awards List.html"><i class="fa-solid fa-trophy ml-4 mr-4"></i>Awards</a>
                 </li>
                 <li>
-                    <a href="Organization List.html"><i style="margin-right:1.8rem;" class="fa-solid fa-building ml-4 "></i>Organisation</a>
+                    <a href="Employee List.html"><i  class="fa-solid fa-user ml-4 mr-4"></i>Employee</a>
                 </li>
                 <li>
-                    <a href="Department List.html"><i class="fa-solid fa-layer-group ml-4 mr-4"></i>Department</a>
+                    <a href="Organisation List.html"><i  class="fa-solid fa-building ml-4 mr-4"></i>Organization</a>
                 </li>
                 <li>
-                    <a href="Designation List.html"><i class="fa-solid fa-sitemap ml-4 mr-4"></i>Designation</a>
+                    <a href="Department List.html"><i  class="fa-solid fa-layer-group ml-4 mr-4"></i>Department</a>
                 </li>
+                <li>
+                    <a href="Designation List.html"><i  class="fa-solid fa-sitemap ml-4 mr-4"></i>Designation</a>
+                </li>
+                
             </ul>
         </div>
     </nav>
+
     <!-- </div> -->
 
-     <div class="container d-flex justify-content-center table-box">
+    <div class="container d-flex table-box">
 
-    <!-- Write your contents here -->
-
-  
+        <!-- Write your contents here -->
 
 
-        <div id="wrap" style="margin-top:20%;margin-left: 30%;" class="align-center">
-            <div class="container justify-content-center">
+        <div class="pt-5">
 
-                <div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">+ Add Awards </button>
-                    </div>
-
-                    <div class="btn-group search">
-                        <div class="form-outline">
-                            <input type="search" id="form1" class="form-control" placeholder="search" />
+            <div id="wrap">
+                <div class="container container-fluid Requester-container" >
+                    <div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">+ Add Awards </button>
                         </div>
-                        <button type="button" class="btn btn-primary">
-                      <i class="fas fa-search"></i>
-                    </button>
+                        <span class="btns">
+                            <div class="btn-group search me-3">
+                                <div class="form-outline">
+                                    <input type="search" id="form1" class="form-control" placeholder="search" />
+                                </div>
+                                <button type="button" class="btn btn-primary search">
+                              <i class="fas fa-search" ></i>
+                            </button>
+                            </div>
+                        </span>
+                        
                     </div>
-                </div>
-                <br>
+                    <br>
 
 
-                <table cellpadding="0" cellspacing="0" class="datatable table table-striped table-bordered">
-                    <thead>
+                    <table cellpadding="5" cellspacing="5" class="datatable table table-striped table-bordered">
                         <tr class="text-center">
                             <th>Award ID</th>
                             <th>Award Name</th>
@@ -104,145 +106,166 @@
                             <td>1</td>
                             <td>Role Star</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                               
+                                <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash" data-toggle="modal" data-target="#Mymodal"title="Disable"></i></a></td>
+                                <div class="modal fade" id="Mymodal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title text-center">
+                                                    Warning!
+                                                </h4>                                                             
+                                            </div> 
+                                            <div class="modal-body">
+                                                Are you sure?
+                                            </div>   
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Ok
+                                                </button>                                 
+                                            </div>
+                                        </div>                                                                       
+                                    </div>                                      
+                                </div>
+                            </td>
                           </tr>
                           <tr class="text-center">
                             <td>2</td>
                             <td>Tech Thunder</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>3</td>
                             <td>Tech Star</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>4</td>
                             <td>Gladiator</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>5</td>
                             <td>Solo Star</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>6</td>
                             <td>Insta Award</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>7</td>
                             <td>Best Performer</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>8</td>
                             <td>Budding Star</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>9</td>
                             <td>Power Performer</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
                           <tr class="text-center">
                             <td>10</td>
                             <td>Crucial Performer</td>
                             <td> <a href = "#" class="btn btn-primary" target = "_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                <a href = "#"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
+                                <a href = "Awards View.html"  class="btn btn-success" target = "_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
                                 <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                           </tr>
 
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
 
 
-                <section id="Paging">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="btn btn-dark" href="#">1</a></li>
-                            <li class="page-item"><a class="btn btn-dark" href="#">2</a></li>
-                            <li class="page-item"><a class="btn btn-dark" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
+                    <section id="Paging">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="btn btn-dark" href="#">1</a></li>
+                                <li class="page-item"><a class="btn btn-dark" href="#">2</a></li>
+                                <li class="page-item"><a class="btn btn-dark" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
             </div>
-       
-
-    <!-- End of content -->
-
-     </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function() {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            <!-- end of main content -->
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function() {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
                         }
-                        parent.appendChild(elem);
                     }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function(msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function(msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            } else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
 
 </body>
 
