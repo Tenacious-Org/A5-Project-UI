@@ -1752,13 +1752,15 @@ pre code {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
+    padding: 0.75rem;
+    
 }
-
 .table th,
 .table td {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
+    border-collapse:collapse;
 }
 
 .table thead th {
@@ -2032,7 +2034,7 @@ pre code {
     background-color: rgba(255, 255, 255, 0.075);
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575.98px) { /* ----------------------------------------------*/
     .table-responsive-sm {
         display: block;
         width: 100%;
@@ -2767,6 +2769,7 @@ fieldset:disabled a.btn {
     color: #fff;
     background-color: #0062cc;
     border-color: #005cbf;
+    
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -9048,7 +9051,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-    padding-bottom: 3rem !important;
+    padding-bottom: 2rem !important;
 }
 
 .pl-5,
@@ -9176,6 +9179,14 @@ button.bg-dark:focus {
     margin-left: -3rem !important;
 }
 
+.ml-6,
+.mx-6 { 
+    margin-left: 3rem !important;  /* -------------------------------------------------------- */
+}
+.mt-10,
+.mx-10 { 
+    margin-top: 8rem !important;  /* -------------------------------------------------------- */
+}
 .m-auto {
     margin: auto !important;
 }
@@ -9198,6 +9209,9 @@ button.bg-dark:focus {
 .ml-auto,
 .mx-auto {
     margin-left: auto !important;
+}
+.mr-10, .mx-10 {
+    margin-right: 17rem !important; /* -------------------------------------------------------- */
 }
 
 @media (min-width: 576px) {
@@ -10902,7 +10916,7 @@ a.text-dark:focus {
 
 body {
     font-family: "Poppins", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px; /*---------------------------------------------------------------------------------*/
     line-height: 1.8;
     font-weight: normal;
     background: #fafafa;
@@ -11066,7 +11080,7 @@ h5,
     color: #fff;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1591.98px) {
     #sidebar {
         margin-left: -250px;
     }

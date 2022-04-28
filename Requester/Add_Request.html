@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Tenacious</title>
+    <title>Add Requester </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="https://kit.fontawesome.com/968b7ca54c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Mystyles.css">
+    <link rel="stylesheet" href="css/newstyles.css">
 </head>
 
 <body>
@@ -38,25 +38,19 @@
 
         <div class="p-4 pt-5">
             <a href="#" class="img logo rounded-circle mb-6"><img src="./images/Adminlogo.png" alt="Admin Logo" style="margin-left:0.8rem;width:11rem;height:10rem"></a>
-            <h4 style="margin-left: 1.5rem;" class="text-light admin-text mt-5">Hello Admin!</h4>
-            <ul class="list-unstyled components mb-5 sidebar-items">
+            <h4 style="margin-left: 0rem;" class="text-light mt-4 text-center">Hello Requester!</h4>
+            <ul class="list-unstyled components mt-4 mb-5 sidebar-items">
                 <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"> <i class="fa-solid fa-house ml-4 mr-4"></i>Home</a>
+                    <a href="#" > <i class="fa-solid fa-house ml-4 mr-4"></i>Home</a>
                 </li>
                 <li>
-                    <a href="#"><i style="margin-right:2rem;" class="fa-solid fa-person ml-4 "></i>Employee</a>
+                    <a href="#" data-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-trophy ml-4 mr-4"></i>My Awards</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-trophy ml-4 mr-4"></i>Awards</a>
+                    <a href="#"><i  class="fa-solid fa-user ml-4 mr-4"></i>Profile</a>
                 </li>
                 <li>
-                    <a href="#"><i style="margin-right:1.8rem;" class="fa-solid fa-building ml-4 "></i>Organisation</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-layer-group ml-4 mr-4"></i>Department</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-sitemap ml-4 mr-4"></i>Designation</a>
+                    <a href="RequesterList.html"><i  class="fa-solid fa-user ml-4 mr-4"></i>Request</a>
                 </li>
             </ul>
         </div>
@@ -68,49 +62,47 @@
 
         <!-- Write your contents here -->
         
-        <form>
-            <div class="container container-fluid position-relative shadow p-3 mb-5 bg-body rounded" id="addRequest">
-              
-              <h3 class="add">Add a Request</h3><br>
-              <div class="nameAward">
-                <div class="form-outline" id="UserName">
-                    <label class="form-label">User Name</label>
-                    <input type="text" class="form-control uname" id="username" placeholder="User Name">
-                  </div> <br><br>
-                  <div class="form-group" id="Award">
-                    <label for="exampleFormControlSelect1">Award</label>
-                    <select class="form-control award" id="awardType">
-                      <option>Select Award Type</option>
-                      <option>Role Star</option>
-                      <option>Solo Star</option>
-                      <option>Tech Thunder</option>
-                      <option>First Victor</option>
-                      <option>Gladiator</option>
-                    </select>
-                  </div>                    
-                </div>  
-              <div class="profileImage">
-                <div class="d-flex align-items-center">
-                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 150px; height: 150px" class="rounded-circle" />                          
-                </div>                            
-                    <h6 class="profileName">User Name</h6>
-              </div> 
-              <div class="profileImage" style="margin-left: 5rem;">
-                <div class="d-flex align-items-center">
-                    <img src="./images/123.jpg" alt="" style="width: 150px; height: 150px;" class="rounded-circle" />                          
-                </div>                            
-                    <h6 class="profileName">Award Name</h6>
-              </div>              
-              <div class="form-outline  w-75 mb-4" id="reason">
-                <label class="form-label" for="form4Example3">Reason</label>
-                <textarea class="form-control" id="form4Example3" rows="7" placeholder="Reason"></textarea>
-               
-              </div>
-              <button type="button" class="btn btn-success" id="submit">Submit</button>
-              <button type="button" class="btn btn-danger" id="cancel">Cancel</button>
-            </div>      
-            </form>
-
+        <div class="container container-fluid rounded bg-white mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Raise Request</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12"><label class="labels">User Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12 form-group" id="Award">
+                                <label for="exampleFormControlSelect1">Award</label>
+                                <select class="form-control award" id="awardType">
+                                  <option>Select Award Type</option>
+                                  <option>Role Star</option>
+                                  <option>Solo Star</option>
+                                  <option>Tech Thunder</option>
+                                  <option>First Victor</option>
+                                  <option>Gladiator</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Reason</label><textarea type="textarea" class="form-control" placeholder="Reason" ></textarea></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex  justify-content-between text-center col-md-3">
+                    <div class="d-flex flex-column align-items-center text-center p-3 ml-4"><img class="rounded-circle mt-10" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Saravana Subramani</span></div>
+                    <div class="d-flex flex-column align-items-center text-center p-3 ml-4"><img class="rounded-circle mt-10" width="150px" src="/images/AwardImg.jpg"><span class="font-weight-bold">Finext Award</span></div>
+                </div>
+            </div>
+            <div class="py-4 justify-content-between text-center">
+                <div class="mr-10 btn-group "><button class="btn btn-primary profile-button" type="button">Submit</button></div>
+                <div class="ml-10 btn-group"><button class="btn btn-danger profile-button" type="button">Cancel</button></div>
+            </div>
+        </div>
+        
+        </div>
+        </div>
         
         <!-- end of main content -->
         </div>

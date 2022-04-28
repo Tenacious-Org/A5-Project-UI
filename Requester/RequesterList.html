@@ -5,11 +5,12 @@
     <title>Requester List</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="https://kit.fontawesome.com/968b7ca54c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Mystyles.css">
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -38,25 +39,19 @@
 
         <div class="p-4 pt-5">
             <a href="#" class="img logo rounded-circle mb-6"><img src="./images/Adminlogo.png" alt="Admin Logo" style="margin-left:0.8rem;width:11rem;height:10rem"></a>
-            <h4 style="margin-left: 1.5rem;" class="text-light admin-text mt-5">Hello Admin!</h4>
-            <ul class="list-unstyled components mb-5 sidebar-items">
+            <h4 style="margin-left: 0rem;" class="text-light mt-4 text-center">Hello Requester!</h4>
+            <ul class="list-unstyled components mt-4 mb-5 sidebar-items">
                 <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"> <i class="fa-solid fa-house ml-4 mr-4"></i>Home</a>
+                    <a href="#" > <i class="fa-solid fa-house ml-4 mr-4"></i>Home</a>
                 </li>
                 <li>
-                    <a href="#"><i style="margin-right:2rem;" class="fa-solid fa-person ml-4 "></i>Employee</a>
+                    <a href="#" data-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-trophy ml-4 mr-4"></i>My Awards</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-trophy ml-4 mr-4"></i>Awards</a>
+                    <a href="#"><i  class="fa-solid fa-user ml-4 mr-4"></i>Profile</a>
                 </li>
                 <li>
-                    <a href="#"><i style="margin-right:1.8rem;" class="fa-solid fa-building ml-4 "></i>Organisation</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-layer-group ml-4 mr-4"></i>Department</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-sitemap ml-4 mr-4"></i>Designation</a>
+                    <a href="#"><i  class="fa-solid fa-user ml-4 mr-4"></i>Request</a>
                 </li>
             </ul>
         </div>
@@ -69,29 +64,45 @@
         <!-- Write your contents here -->
 
 
-        <div style="margin-top:7%;margin-left: 25%;" class="p-4 p-md-5 pt-5">
+        <div class="pt-5">
 
-
-            <div id="wrap" style="margin-top:7%;" class="align-center">
-                <div class="container container-fluid" >
+            <div id="wrap">
+                <div class="container container-fluid Requester-container" >
                     <div>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary"> <i class="fa-solid fa-user-plus"></i> Add Request </button>
+                            <a href="Add_Request.html">
+                                <button type="button" class="btn btn-primary"> <i class="fa-solid fa-user-plus"></i> Add Request </button>
+                            </a>
                         </div>
-
-                        <div class="btn-group search">
-                            <div class="form-outline">
-                                <input type="search" id="form1" class="form-control" placeholder="search" />
+                        <span class="btns">
+                            <div class="btn-group search me-3">
+                                <div class="form-outline">
+                                    <input type="search" id="form1" class="form-control" placeholder="search" />
+                                </div>
+                                <button type="button" class="btn btn-primary search">
+                              <i class="fas fa-search" ></i>
+                            </button>
                             </div>
-                            <button type="button" class="btn btn-primary search">
-                          <i class="fas fa-search"></i>
-                        </button>
-                        </div>
+                            <div class="btn-group dropdown">
+                                <button type="button" class="btn btn-primary" > Status </button>
+                                <select name="" id="">
+                                    <option>Pending</option>
+                                    <option>Approved</option>
+                                    <option>Rejected</option>
+                                </select>
+                                <ul class="dropdown-menu dropdown-item-hovering ">
+                                  <li><a class="dropdown-item" href="#">Pending</a></li>
+                                  <li><a class="dropdown-item" href="#">Approved</a></li>
+                                  <li><a class="dropdown-item" href="#">Rejected</a></li>
+                                </ul>
+                              </div>
+                        </span>
+                        
                     </div>
                     <br>
 
 
-                    <table cellpadding="0" cellspacing="0" class="datatable table table-striped table-bordered">
+                    <table cellpadding="5" cellspacing="5" class="datatable table table-striped table-bordered">
                         <thead>
                             <tr class="text-center">
                                 <th>ACE ID</th>
@@ -105,110 +116,109 @@
                         <tbody>
                             <tr class="text-center">
                                 <td>ACE0123</td>
-                                <td>Sanjay</td>
+                                <td>Sanjay Subramani</td>
                                 <td>First Victor</td>
                                 <td>12-11-2022</td>
                                 <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td>
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
                             </tr>
                             </tr>
                             <tr class="text-center">
                                 <td>ACE0893</td>
-                                <td>Kathir</td>
+                                <td>Kathir Ramarajan</td>
                                 <td>Role Star</td>
                                 <td>25-04-2022</td>
                                 <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             </tr>
                             <tr class="text-center">
                                 <td>ACE1234</td>
-                                <td>Saravana</td>
+                                <td>Saravana Dinesh</td>
                                 <td>Gladiator</td>
                                 <td>21-02-2022</td>
                                 <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             <tr class="text-center">
                                 <td>ACE0987</td>
-                                <td>Dinesh</td>
+                                <td>Dinesh Thilasiraman</td>
                                 <td>Insta</td>
                                 <td>25-03-2022</td>
                                 <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             </tr>
                             <tr class="text-center">
                                 <td>ACE9456</td>
-                                <td>Anand</td>
+                                <td>Anand Thevaraj</td>
                                 <td>Role Star</td>
                                 <td>01-01-2022</td>
                                 <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             </tr>
                             <tr class="text-center">
                                 <td>ACE5678</td>
-                                <td>Hariharan</td>
+                                <td>Hariharan Murugan</td>
                                 <td>Role Star</td>
                                 <td>10-10-2021</td>
-                                <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td>Rejected</td>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             </tr>
                             <tr class="text-center">
                                 <td>ACE0289</td>
-                                <td>Vicky</td>
+                                <td>Vicky Kailash</td>
                                 <td>First Victor</td>
                                 <td>10-01-2021</td>
-                                <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td>Rejected</td>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             </tr>
                             <tr class="text-center">
                                 <td>ACE0198</td>
-                                <td>Rabi</td>
+                                <td>Rabi Shikandhar</td>
                                 <td>Gladiator</td>
                                 <td>01-09-2021</td>
-                                <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td>Approved</td>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             <tr class="text-center">
                                 <td>ACE0123</td>
-                                <td>Dom</td>
+                                <td>Dom David</td>
                                 <td>First Victor</td>
                                 <td>02-10-2021</td>
-                                <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td>Approved</td>
+                                <td>
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             </tr>
                             <tr class="text-center">
                                 <td>ACE1023</td>
-                                <td>Vignesh</td>
+                                <td>Vignesh Subramanaiyam</td>
                                 <td>Insta</td>
                                 <td>12-11-2021</td>
-                                <td>Pending</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                <td>Approved</td>
+                                <td> 
                                     <a href="#" class="btn btn-success" target="_self"><i class="fa-solid fa-circle-info" title="Details"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                    
                             </tr>
                             </tr>
 
