@@ -11290,3 +11290,6 @@ button {
         z-index: 100;
     }
 }
+body{
+    background-color: rgb(247, 243, 252);
+}
