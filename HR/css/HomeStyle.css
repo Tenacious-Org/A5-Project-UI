@@ -1,0 +1,52 @@
+.card {
+    border-color: #866ec7;
+}
+.profile1 {
+    width: 150px;
+    height: 150px;
+}
+.profile1-card-3 .profile1{
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  margin-top:70px;
+}
+
+.profile-thumb-block1 {
+  display: inline-block;
+  margin: 15px 50px 15px 20px;
+}
+
+.FooterImage{
+  text-align:center;
+}
+.content {
+  padding-top: 150px;
+  overflow-x: hidden;
+   
+}
+.greetingcomment {
+  margin: 20px 20px 20px 20px;
+  
+}
+.card-footer{
+  border-color: #866ec7;
+}
+.allcomments {
+  width: 399px;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.backbutton{
+  text-align: center;
+}
+
+#Test_DatetimeLocal{
+  width:100px; height:38px;
+}
+#buttonapply{
+  width:100px; height:38px;
+  color: #866ec7;
+
+}
