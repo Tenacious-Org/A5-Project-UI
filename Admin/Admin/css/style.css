@@ -64,7 +64,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #DACFEF;
+    background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -11271,10 +11271,4 @@ button {
     #sidebar {
         top: 110px;
     }
-<<<<<<< Updated upstream
-}
-body{
-    background-color:rgb(247, 243, 252);
-=======
->>>>>>> Stashed changes
 }

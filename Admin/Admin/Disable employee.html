@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Department List</title>
+    <title>Disable Employee List</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/968b7ca54c.js" crossorigin="anonymous"></script>
@@ -51,7 +51,7 @@
                     <a href="Employee List.html"><i  class="fa-solid fa-user ml-4 mr-4"></i>Employee</a>
                 </li>
                 <li>
-                    <a href="Organisation List.html"><i  class="fa-solid fa-building ml-4 mr-4"></i>Organization</a>
+                    <a href="Organisation List.html"><i  class="fa-solid fa-building ml-4 mr-4 "></i>Organization</a>
                 </li>
                 <li>
                     <a href="Department List.html"><i  class="fa-solid fa-layer-group ml-4 mr-4"></i>Department</a>
@@ -77,7 +77,7 @@
                 <div class="container container-fluid Requester-container" >
                     <div>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary"> + Add Department </button>
+                            <a href="AddEmployee.html" class="btn btn-primary"> <i class="fa-solid fa-user-plus"></i> Add Employee </a>
                         </div>
                         <span class="btns">
                             <div class="btn-group search me-3">
@@ -97,86 +97,147 @@
                     <table cellpadding="5" cellspacing="5" class="datatable table table-striped table-bordered">
                         <thead>
                             <tr class="text-center">
-                                <th>Department ID</th>
-                                <th>Department Name</th>
-                                <th>Organization Name</th>
+                                <th>ACE ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Organization</th>
+                                <th>Designation</th>
+                                <th>Department</th>
                                 <th>Action</th>
+                                
+                                
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="text-center">
-                                <td>1</td>
-                                <td>DotNet</td>
+                                <td>ACE0123</td>
+                                <td>Sanjay Subramani</td>
+                                <td>sanjay@aspiresys.com</td>
                                 <td>Development</td>
-<<<<<<< Updated upstream
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
-                            </tr>
-=======
-                                <td> <a href="Edit Department.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-                                      <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash" data-toggle="modal" data-target="#Mymodal"title="Disable"></i></a></td>
-                                    <div class="modal fade" id="Mymodal">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title text-center">
-                                                        Warning!
-                                                    </h4>                                                             
-                                                </div> 
-                                                <div class="modal-body">
-                                                    Are you sure?
-                                                </div>   
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                        Close
-                                                    </button>
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                        Ok
-                                                    </button>                                 
-                                                </div>
-                                            </div>                                                                       
-                                        </div>                                      
-                                    </div>
-                                </td>
-                              </tr>
->>>>>>> Stashed changes
-                            <tr class="text-center">
-                                <td>2</td>
                                 <td>Java</td>
-                                <td>Banking and Finance</td>
-                                <td> <a href="#" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
-<<<<<<< Updated upstream
-                                    <a href="#" class="btn btn-danger" target="_self"><i class="fa-solid fa-user-slash"title="Disable"></i></a></td>
+                                <td>Software Engineer</td>
+
+                                <td>
+                                 <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                             </td>
+                           </tr>
+                            <tr class="text-center">
+                                <td>ACE0579</td>
+                                <td>Hema Malini</td>
+                                <td>hema@aspiresys.com</td>
+                                <td>Testing</td>
+                                <td>Java</td>
+                                <td>Software Engineer</td>
+
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                
+                            </td>
+                          </tr>
+                            <tr class="text-center">
+                                <td>ACE0765</td>
+                                <td>Jos Butler</td>
+                                <td>Jos@aspiresys.com</td>
+                                <td>Support</td>
+                                <td>LAMP</td>
+                                <td>Senoir Software Engineer</td>
+
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                 
+                             </td>
+                           </tr>
                             </tr>
-=======
-                                    <a href = "#"  class="btn btn-danger" target = "_self"><i class="fa-solid fa-user-slash" data-toggle="modal" data-target="#Mymodal"title="Disable"></i></a></td>
-                                    <div class="modal fade" id="Mymodal">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title text-center">
-                                                        Warning!
-                                                    </h4>                                                             
-                                                </div> 
-                                                <div class="modal-body">
-                                                    Are you sure?
-                                                </div>   
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                        Close
-                                                    </button>
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                        Ok
-                                                    </button>                                 
-                                                </div>
-                                            </div>                                                                       
-                                        </div>                                      
-                                    </div>
-                                </td>
-                              </tr>
->>>>>>> Stashed changes
+                            <tr class="text-center">
+                                <td>ACE0386</td>
+                                <td>Pat Cummins</td>
+                                <td>pat@aspiresys.com</td>
+                                <td>Testing</td>
+                                <td>DotNet</td>
+                                <td>Project Manager</td>
 
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                 
+                             </td>
+                           </tr>
+                            </tr>
+                            <tr class="text-center">
+                                <td>ACE0777</td>
+                                <td>Steve smith</td>
+                                <td>steve@aspiresys.com</td>
+                                <td>Support</td>
+                                <td>Oracle</td>
+                                <td>Senior Software Engineer</td>
 
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                
+                             </td>
+                           </tr>
+                            
+                            <tr class="text-center">
+                                <td>ACE0123</td>
+                                <td>Sanjay Subramani</td>
+                                <td>sanjay@aspiresys.com</td>
+                                <td>Development</td>
+                                <td>Java</td>
+                                <td>Software Engineer</td>
+
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                 
+                             </td>
+                           </tr>
+                            <tr class="text-center">
+                                <td>ACE0123</td>
+                                <td>Sanjay Subramani</td>
+                                <td>sanjay@aspiresys.com</td>
+                                <td>Development</td>
+                                <td>Java</td>
+                                <td>Software Engineer</td>
+
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+
+                            </tr>
+                            </tr>
+                            <tr class="text-center">
+                                <td>ACE0123</td>
+                                <td>Sanjay Subramani</td>
+                                <td>sanjay@aspiresys.com</td>
+                                <td>Development</td>
+                                <td>Java</td>
+                                <td>Software Engineer</td>
+
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                
+                             </td>
+                           </tr>
+                            <tr class="text-center">
+                                <td>ACE0123</td>
+                                <td>Sanjay Subramani</td>
+                                <td>sanjay@aspiresys.com</td>
+                                <td>Development</td>
+                                <td>Java</td>
+                                <td>Software Engineer</td>
+
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                             </td>
+                           </tr>
+                            <tr class="text-center">
+                                <td>ACE0123</td>
+                                <td>Sanjay Subramani</td>
+                                <td>sanjay@aspiresys.com</td>
+                                <td>Development</td>
+                                <td>Java</td>
+                                <td>Software Engineer</td>
+
+                                <td>
+                                    <a href="Edit Employee.html" class="btn btn-primary" target="_self"><i class="fa-solid fa-pen-to-square" title="Edit"></i></a>
+                                 
                         </tbody>
                     </table>
 
