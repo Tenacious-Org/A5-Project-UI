@@ -9,9 +9,10 @@
     <script src="https://kit.fontawesome.com/968b7ca54c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Admin.css">
+
 
 </head>
-
 <body>
 
     <!-- <div class="d-flex flex-column position-fixed"> -->
@@ -49,7 +50,7 @@
                     <a href="Employee List.html"><i  class="fa-solid fa-user ml-4 mr-4"></i>Employee</a>
                 </li>
                 <li>
-                    <a href="Organisation List.html"><i  class="fa-solid fa-building ml-4 mr-4 "></i>Organization</a>
+                    <a href="Organisation List.html"><i  class="fa-solid fa-building ml-4 mr-4"></i>Organization</a>
                 </li>
                 <li>
                     <a href="Department List.html"><i  class="fa-solid fa-layer-group ml-4 mr-4"></i>Department</a>
@@ -62,80 +63,31 @@
     </nav>
     <!-- </div> -->
 
-     <div class="container d-flex justify-content-center table-box">
-         <div>
-             <h1><a href="#">DASHBOARD</a></h1>
-         </div>
 
+    <div class="container d-flex justify-content-center table-box">
 
-    <!-- Write your contents here -->
-    <script type="text/javascript">
-        window.onload = function () {
-          var chart = new CanvasJS.Chart("chartContainer",
-          {
-            animationEnabled: true,
-            animationDuration:2000,
-            exportEnabled: true,
-            backgroundColor: "#E5E5E5",
-            theme: "light2", 
-            title:{
-            text: "Award Given in last 6 months Organisation wise"
-            },
-              data: [
-            {
-              type: "stackedColumn",
-              legendText: "Dotnet",
-              indexLabel: "{y}",
-			showInLegend: "true",
-            indexLabelPlacement: "inside",
-              dataPoints: [
-              {  y: 48, label: "December"},
-              {  y: 111 , label: "January"},
-              {  y: 49, label: "February" },
-              {  y: 62, label: "march" },
-              {  y: 90, label: "April" },
-              {  y: 86, label: "May"},
-              
-      
-              ]
-            },  {
-              type: "stackedColumn",
-              legendText: "Testing",
-			showInLegend: "true",
-            indexLabel: "{y}",
-			yValueFormatString: "#",
-			indexLabelPlacement: "inside",
-               dataPoints: [
-              {  y: 250 ,label: "December"},
-              {  y: 135 , label: "January"},
-              {  y: 107, label: "February" },
-              {  y: 52, label: "March" },
-              {  y: 85, label: "April" },
-              {  y: 98, label: "May"},
-              
-      
-              ]
-            }
-            ]
-          });
-      
-          chart.render();
-        }
-        </script>
-       <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        <div id="chartContainer" style=" position:fixed;z-index:-1;;bottom:10%;left:20%;height: 50%; width: 70%;">
-        </div>
+        <form class="border-box position-relative">
+
+            <span class="border-box-tip"><b>Add Organisation</b></span>
+
+            <div class="row g-3 align-items-center justify-content-center mb-3">
+                <div class="col-auto p-1.5">
+                    <label for="firstName" class="col-form-label">Organisation Name</label>
+                    <input type="text" id="firstName" class="form-control" aria-describedby="firstNameHelpInline">
+
+                </div>
+            </div>
+           
+
+            <div class="row justify-content-center align-items-center mt-5 button-group">
+                <a href="Awards List.html" class="btn btn-primary">Add</a>
+                <button class="btn btn-primary">Cancel</button>
+            </div>
+        </form>
+    </div>
 
 
 
-
-
-
-
-
-    <!-- End of content -->
-
-     </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
