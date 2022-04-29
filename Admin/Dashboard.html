@@ -66,6 +66,37 @@
          <div>
              <h1><a href="#">DASHBOARD</a></h1>
          </div>
+         <div style=" width:70%;position: absolute;top:20%; Left:20%; border:3px solid mediumpurple;background-color:rgb(247, 243, 252);border-radius:30px;">
+            <select  style="width:15%;background-color:mediumpurple;color:white;border-radius: 30px; border:1.5px solid mediumpurple;padding:0.3rem;"class="form-select  mt-3 mx-3" aria-label=".form-select-lg example">
+                <option selected>Choose organisation</option>
+                <option value="1">Development</option>
+                <option value="2">Testing</option>
+                <option value="3">Facility</option>
+                <option value="3">Cafeteria</option>
+              </select>
+              <select  style="width:15%;background-color:mediumpurple; padding:2rem ;color:white;border-radius: 30px; border:1.5px solid mediumpurple;padding:0.3rem;"class="form-select mx-3 mt-3" aria-label="Disabled select example"Disabled>
+                <option selected>Choose Department</option>
+                <option value="1">DotNet</option>
+                <option value="2">Java</option>
+                <option value="3">Open source</option>
+                <option value="3">LAMP</option>
+              </select>
+              <select  style="width:15%;background-color:mediumpurple; padding:2rem ;color:white;border-radius: 30px; border:1.5px solid mediumpurple;padding:0.3rem;"class="form-select m-3" aria-label=".form-select-lg example">
+                <option selected>Choose Award</option>
+                <option value="1">Role Star</option>
+                <option value="2">Budding Star</option>
+                <option value="3">Tech Thunder</option>
+                <option value="3">First Victor</option>
+              </select>
+              <div style="display: inline-block" class="mb-3 ml-3"> 
+                  <span class="input-group-addon">From</span>
+                <input  style="width:40%;height:2rem;background-color:mediumpurple;color:white;border-radius: 30px; border:1.5px solid mediumpurple;" type="date" class="px-2 mr-2"  name="start" />
+                
+                    <span class="input-group-addon">To</span>
+                <input style="width:40%;height:2rem;background-color:mediumpurple; color:white;border-radius: 30px; border:1.5px solid mediumpurple;" type="date" class="px-2 " name="end" />
+               </div>
+               <button style=" text-align: center;vertical-align: middle; width:auto;background-color:mediumpurple;border-radius:30px;height:2rem;color:white" class="btn my-2 ml-3" type="submit">Apply Filter</button>
+         </div>
 
 
     <!-- Write your contents here -->
@@ -76,7 +107,7 @@
             animationEnabled: true,
             animationDuration:2000,
             exportEnabled: true,
-            backgroundColor: "#E5E5E5",
+            backgroundColor: "rgb(247, 243, 252)",
             theme: "light2", 
             title:{
             text: "Award Given in last 6 months Organisation wise"
