@@ -64,7 +64,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: rgb(247, 243, 252);
 }
 
 [tabindex="-1"]:focus {
@@ -11271,4 +11271,10 @@ button {
     #sidebar {
         top: 110px;
     }
+}
+body{
+    background-color: rgb(247, 243, 252);
+}
+select:hover{
+cursor: pointer;
 }
