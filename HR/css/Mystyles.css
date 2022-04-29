@@ -1,79 +1,7 @@
-/* Logeshkumar */
-
-@media (max-width: 576px) {
-    .input-group,
-    .form-control {
-        width: 260px;
-    }
-}
-
-.border-box {
-    padding: 20px 20px;
-    width: 800px;
-    min-width: 240px;
-    border: 2px solid #791c96;
-    background-color: #fafafa;
-  
-}
-
-.border-box-tip {
-    position: absolute;
-    top: -13px;
-    background-color: #fafafa;
-    padding: 0px 5px;
-}
-
-.space-between {
-    justify-content: space-between !important;
-}
-
-.space-around {
-    justify-content: space-around !important;
-}
-
-.col-form-label {
-    width: 160px;
-    font-weight: 600;
-    border-color:#000000;
-}
-
-.button-group .btn {
-    margin: 5px 60px;
-}
-
-.input-group,
-.form-control {
-    width: 360px;
-}
-
-.d-flex {
-    color: black;
-}
-
-.table-box {
-    padding-top: 180px;
-    margin-bottom: 50px;
-}
-
-.custom-select {
-    border-color:black;
-}
-
-
-
-
-
-
-
-
-/* vidhyapriya */
 .search{
     float: right;
 }
 
-.add{
-    margin-left:23rem;
-  }
 
   #UserName
   {
@@ -107,7 +35,7 @@
     padding: 10px;
     width:60rem;
     margin-top:10rem;
-    margin-left:15rem;
+    
   }
   #submit{
       margin-left:20rem;
@@ -127,7 +55,6 @@
   .profileImage
   {
       display:inline-block;
-      margin-top:40px;
   }
   .profileName
   {
@@ -146,3 +73,48 @@
   .dropdown-item-hovering :hover{
       background-color:#BFBFBF;
   }
+  .req-images{
+    display: inline-flex;
+  }
+
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
