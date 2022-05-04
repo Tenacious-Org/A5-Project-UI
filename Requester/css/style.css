@@ -9187,6 +9187,10 @@ button.bg-dark:focus {
 .mx-10 { 
     margin-top: 8rem !important;  /* -------------------------------------------------------- */
 }
+.ml-10,
+.mx-10 { 
+    margin-left: 18rem !important;  /* -------------------------------------------------------- */
+}
 .m-auto {
     margin: auto !important;
 }
